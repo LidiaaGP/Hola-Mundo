@@ -1,0 +1,133 @@
+@charset "ISO-8859-1";
+
+:root {
+  /* Colores Azul Verdoso */
+  --principal: #007F7E;
+  --principalOscuro: #005D5C;
+  --principalMuyOscuro: #004848;
+  --principalClaro: #00A5A4;
+  --principalMuyClaro: #00B8B7;
+
+  /* contraste Dorado */
+  --contraste: #FFD700;
+  --contrasteOscuro: #CCA300;
+  --contrasteClaro: #FFE066;
+  
+  /* Colores de Fondo */
+  --colorFondoOscuro: #E0F7F7;
+  --colorFondoClaro: #F5FEFE;
+  
+  /* Colores de Texto */
+  --texto: #212121; 
+  --textoClaro: #BDBDBD; 
+  
+  /* Tamaños */
+  --sizeFuente: 12px;
+  --sizePadding: 5px;
+  
+  /* Fuentes */
+  --fuente: 'Helvetica Neue', Arial, sans-serif;
+  --fuenteContraste: 'Georgia', 'Times New Roman', serif;
+
+}
+
+
+*{
+	margin:0;
+	padding:0;
+	font-family: var(--fuente);
+	color: var(--texto);
+	font-size: var(--texto);
+}
+
+/*  Estilos de la cabecera  */
+header{
+	background-color: var(--principal);
+	height:90px;
+	
+	display:flex;
+	flex-direction:row;
+	
+	padding:10px;
+}
+
+#cabecera_izq{
+	width:70%;
+	
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:flex-start;
+}
+
+#cabecera_der{
+	width:30%;
+	
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:end;
+}
+
+.icono-redes{
+	margin-left:10px;
+}
+
+/* Estilos del menu */
+nav{
+	background-color: var(--principalOscuro);
+}
+
+#menu{
+	
+}
+
+.elem_menu{
+	background-color: yellow;
+	display: inline-block;
+	list-style: none;
+	padding-left: 0;
+}
+
+.elem_menu > a{
+	display: block;
+	background-color: var(--principalOscuro);
+	padding: 8px 30px;
+	
+	color: var(--contraste);
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.elem_menu > a:visited{
+ color: var(--contraste);
+}
+
+.elem_menu > a:hover{
+ background-color: var(--principalClaro);
+ color: var(--contrasteClaro);
+}
+
+.elem_menu > a:active{
+ background-color: var(--contraste);
+ color: var(--principalOscuro);
+}
+
+h1{
+ color:var(--contraste);
+ 
+ font-family: var(--fuenteContraste);
+ font-size:48px;
+}
+
+
+/* estilos del cuerpo */
+main{
+	background-color: blue;
+}
+
+footer{
+	background-color: yellow;
+}
+
